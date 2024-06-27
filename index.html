@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLS - Method </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="allcontent">
+    <p class="head">DLS calculator</p>
+    <ul class="list">
+        <li><button onclick="view(1)" name="viewer" id="1">Type 1</li>
+        <li><button onclick="view(2)" name="viewer" id="2">Type 2</li>
+        <li><button onclick="view(3)" name="viewer" id="3">Type 3</li>
+        <li><button onclick="view(4)" name="viewer" id="4">Type 4</li>
+    </ul>
+    <div class="dis">
+        <div id="dis1" class="dis1">
+    <form class="team1">
+        <label class="team_1">TEAM 1</label>
+        <input type="text" placeholder="Enter score of team1" id="team_1val" class="team_1val">
+        <input type="text"placeholder="Enter overs left" id="team_1over" class="team_1over">
+        <input type="text"placeholder="Enter wickets lost" id="team_1wick" class="team_1wick">
+    </form>
+        </div>
+        <div id="dis2" class="dis2">
+    <form class="team2">
+        <label class="team_2">TEAM 2</label>
+        <input type="text" placeholder="Enter score of team2" id="team_2val" class="team_2val">
+        <input type="text"placeholder="Enter overs left" id="team_2over" class="team_2over">
+        <input type="text"placeholder="Enter wickets lost" id="team_2wick" class="team_2wick">
+    </form>
+        </div>
+    <div id="projected" class="projected">
+        <button onclick="go()">submit</button>
+        <label id="val" class ="res"></label>
+    </div>
+</div>
+</div>
+<div class="info">
+    <p>TYPE 1: Reduced target: Team 1's halted due to rain and finding reduced target for team 2 in the number of overs played by Team 1.<br><br></p>
+    <p>TYPE 2: Reduced target: Team 1's innings completed  and finding desired score for Team 2 in given overs Team 2's innings cut short (resources lost at end of innings)<br><br></p>
+    <p>TYPE 3: Deciding the winner after halt :Team 1's innings completed; Team 2's innings interrupted (resources lost in middle of innings)<br><br></p>
+    <p>TYPE 4: I am non functional yet. Use me to flush</p>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
