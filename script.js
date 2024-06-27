@@ -71,13 +71,13 @@ if(buffer===1){
     projval.innerHTML=mystring2;
 }
 if(buffer===2){
-    projection=(score1.value/100*(arr[over1.value-1][wicket1.value]));
+    projection=(score1.value/100*(arr[over1.value][wicket1.value]));
     mystring="Team 2 has to score ";
     mystring2=mystring + projection+" in "+ over1.value +" overs";
     projval.innerHTML=mystring2;
 }
 if(buffer===3){
-    projection=(arr[over1.value-1][wicket1.value]);
+    projection=(arr[over1.value][wicket1.value]);
     if((arr[over2.value-1][wicket2.value])>projection){
         projval.innerHTML="Congratulations ! TEAM 2 has won the match by DLS";
     }
